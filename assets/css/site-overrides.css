@@ -1,0 +1,112 @@
+/* Поднимаем ленту логотипов на обложке, чтобы не прилипали к нижней границе */
+.logo-main {
+  transform: translateY(-28px);
+}
+@media (max-width: 991px) {
+  .logo-main {
+    transform: translateY(-20px);
+  }
+}
+@media (max-width: 479px) {
+  .logo-main {
+    transform: translateY(-14px);
+  }
+}
+
+/* Цитата-блок: убираем blend-mode для фото, чтобы цвета не инвертировались */
+.testimonials-second .photo-movement._02,
+.testimonials-second .photo-movement._02 .photo-first {
+  mix-blend-mode: normal;
+}
+
+/* Аватар Григория рядом с подписью */
+.testimonials-second .author-photo.second,
+.testimonials-second .right-testi .author-photo.second {
+  background-image: url("../img/grigory-avatar-v3.png?v=3") !important;
+  background-position: 50% 30% !important;
+  background-size: cover !important;
+}
+
+/* Большое фото справа — квадратный кроп, чтобы блок не был слишком высоким */
+.testimonials-second {
+  min-height: 0 !important;
+}
+.testimonials-second .left-testi .photo-movement._02 {
+  min-height: 0 !important;
+  aspect-ratio: 1 / 1;
+  height: auto !important;
+}
+@media (max-width: 991px) {
+  .testimonials-second .left-testi .photo-movement._02 {
+    min-height: 0 !important;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* Шапка: МИНИМАЛЬНАЯ страховка. Webflow в <head> прячет .navigation-text
+   через visibility:hidden пока не инициализируется IX3 (класс w-mod-ix3 на <html>).
+   Если по сети IX3 опаздывает — текст не виден на старте. Перебиваем ТОЛЬКО visibility.
+   opacity/width/transform/color НЕ трогаем — родные анимации Webflow (entrance, hover)
+   работают как задуманы и НЕ ломаются нашим override. */
+html.w-mod-js:not(.w-mod-ix3) .navbar.w-nav .nav-menu .navigation-link-animation .navigation-text,
+.navbar.w-nav .nav-menu .navigation-link-animation .navigation-text {
+  visibility: visible !important;
+}
+
+/* То же самое для блока «О нас» и других IX3-секций (.about-title,
+   .section.animation, два data-wf-target). По сети с большими потерями
+   (Вьетнам→РФ ~12% loss) IX3 не успевает доинициализироваться → текст
+   зависает visibility:hidden навсегда. Перебиваем ТОЛЬКО visibility —
+   scroll-reveal анимации (opacity/transform) работают как задуманы. */
+html.w-mod-js:not(.w-mod-ix3) .about-title,
+html.w-mod-js:not(.w-mod-ix3) .section.animation,
+html.w-mod-js:not(.w-mod-ix3) [data-wf-target*="c3ae3b2b-26fb-d00d-9e12-de1658a778b1"],
+html.w-mod-js:not(.w-mod-ix3) [data-wf-target*="c3ae3b2b-26fb-d00d-9e12-de1658a778b3"],
+.about-title,
+.section.animation {
+  visibility: visible !important;
+}
+
+/* ============================================================================
+   МОБИЛЬНЫЕ ПРАВКИ (2026-06-01)
+   Причина "страница на телефоне отдаляется / выглядит через попку":
+   горизонтальный overflow ~112px — декоративные элементы (мокапы телефонов
+   .photo-1, лента логотипов .ticket-content 400vw) и навбар вылезают за экран,
+   мобильный браузер ужимает всю страницу. Высоту блоков не меняем.
+   ============================================================================ */
+@media screen and (max-width: 767px) {
+  /* 1. Срезаем горизонтальный overflow в потоке страницы (мокапы .photo-1,
+        лента логотипов 400vw и пр.). overflow-x: clip (а не hidden) НЕ ломает
+        position: sticky / pinned-секции. */
+  html,
+  body {
+    overflow-x: clip;
+  }
+
+  /* 2. Фиксированный контейнер навбара раздувался до 502px (бургер/кнопки
+        уезжали за правый край). Жёстко держим его в ширине экрана. */
+  .absolute-navigation {
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  /* 3. Сам навбар: grid 1fr 2fr раздувался; колонка "auto" под кнопки +
+        ограничение ширины возвращают шапку в экран, бургер снова доступен. */
+  .navbar {
+    grid-template-columns: 1fr auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+/* Скрыть бейдж "Made in Webflow" и шаблонные CTA на всех страницах (как на главной) */
+.w-webflow-badge,
+a[href*="webflow.com?utm_campaign=brandjs"],
+.template-badge,
+.template-cta {
+  display: none !important;
+}
