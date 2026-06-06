@@ -1,0 +1,231 @@
+{
+  "companies": [
+    {
+      "id": "niki-models",
+      "name": "Niki.models",
+      "category": "Модельное агентство",
+      "logoText": "N",
+      "summary": "Сняли волну заказных и недостоверных негативных отзывов на картах и отзовиках в нескольких городах, восстановили рейтинг и доверие к карточкам организации.",
+      "stats": {
+        "removed": 38,
+        "cities": [
+          "Москва",
+          "Санкт-Петербург",
+          "Екатеринбург"
+        ],
+        "platforms": [
+          "Яндекс",
+          "2ГИС",
+          "ZOON"
+        ]
+      },
+      "locations": [
+        {
+          "city": "Москва",
+          "address": "Воронцово Поле, 18"
+        },
+        {
+          "city": "Санкт-Петербург",
+          "address": "Невский проспект, 119"
+        },
+        {
+          "city": "Екатеринбург",
+          "address": ""
+        }
+      ],
+      "proofs": [
+        {
+          "img": "assets/cases-clean/case-01.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-02.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-03.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-04.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-05.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-06.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-07.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-08.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-09.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-10.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-11.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-12.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-13.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-15.png",
+          "platform": "2ГИС",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-16.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-17.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-18.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-19.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-20.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-21.png",
+          "platform": "ZOON",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-22.png",
+          "platform": "2ГИС",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-23.png",
+          "platform": "2ГИС",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-24.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-25.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-26.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-27.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-28.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-29.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-31.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-32.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-33.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-34.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-35.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-36.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-37.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-38.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-39.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        },
+        {
+          "img": "assets/cases-clean/case-40.png",
+          "platform": "Яндекс",
+          "action": "Отзыв снят с публикации"
+        }
+      ],
+      "disclaimer": "Скриншоты — реальные уведомления площадок о снятии отзывов. Персональные данные (имена авторов, e-mail, номера обращений) скрыты для соблюдения 152-ФЗ."
+    }
+  ]
+}
