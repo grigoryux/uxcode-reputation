@@ -5502,10 +5502,10 @@ blockquote {
 }
 
 .logo-small {
-  background-image: url("https://cdn.prod.website-files.com/6863db821d218d7a2559e546/6870fc2865fc14a082f329dc_logo-small.webp"), linear-gradient(30deg, var(--color--blue), #fff0);
+  background-image: url("../img/uxcode-logo.svg?v=2"), linear-gradient(30deg, var(--color--blue), #fff0);
   background-position: 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: 22px, auto;
+  background-size: 30px, auto;
   border: 1px solid #ffffff08;
   border-radius: .4rem;
   width: 50px;
