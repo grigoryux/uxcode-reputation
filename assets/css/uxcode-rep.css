@@ -2385,7 +2385,7 @@ blockquote {
 
 .logotype {
   flex: none;
-  width: 100px;
+  width: 60px;
 }
 
 .logotype.for-footer {
@@ -7098,7 +7098,7 @@ blockquote {
   }
 
   .logotype {
-    width: 110px;
+    width: 60px;
   }
 
   .icon-component {
